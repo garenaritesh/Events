@@ -166,8 +166,7 @@
 
 /* For Mobile Responsive */
 @media (max-width: 400px) {
-
-    nav {
+nav {
         justify-content: center;
         align-items: center;
     }
@@ -196,6 +195,10 @@
         align-items: center;
         justify-content: center;
         flex-direction: column-reverse;
+    }
+
+    .new_events {
+        height: 100vh;
     }
 
     .main_intro .left,
@@ -230,6 +233,7 @@
 
     .student_mission {
         padding: 10px;
+        height: 100vh;
     }
 
     .student_mission .img_section {
@@ -241,6 +245,7 @@
 
     .student_mission .img_section img {
         width: 100%;
+        scale: 1.5;
     }
 
     .students {
@@ -264,6 +269,61 @@
 
     footer ul:nth-child(1) {
         display: none;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .about .left,
+    .about .right {
+        width: 100%;
+        position: relative;
+    }
+
+    .about .left {
+        padding: 10px;
+        height: 60vh;
+    }
+
+    .about .left img {
+        width: 300px;
+        top: 8%;
+        left: 4%;
+    }
+
+    .about .left .img_anima_box {
+        top: 5%;
+        left: 2%;
+    }
+
+    @keyframes img_box_anima {
+        0% {
+            top: 20%;
+            left: -10%;
+        }
+
+        100% {
+            top: 20%;
+            left: 2%;
+        }
+    }
+
+    .about .right .title {
+        font-size: 20px;
+        font-weight: 400px;
+    }
+
+    .about .right h1 {
+        font-size: 30px;
+    }
+
+    .about .right h3 {
+        font-size: 18px;
+    }
+
+    .about .right p {
+        font-size: 16px;
     }
 
 }
